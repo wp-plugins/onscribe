@@ -1,0 +1,18 @@
+
+/* Settings page */
+body.settings_page_onscribe-admin table.products-list {
+	width: 100%;
+	background: #fff;
+}
+
+body.settings_page_onscribe-admin table.products-list tr {
+}
+
+body.settings_page_onscribe-admin table.products-list td {
+	padding: 8px;
+	border: solid 2px #ccc;
+}
+
+body.settings_page_onscribe-admin table.products-list td.delete {
+	width: 24px;
+}
