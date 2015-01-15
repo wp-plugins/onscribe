@@ -129,7 +129,8 @@ class OnscribeSettings
 	 */
 	public function sanitize( $input )
 	{
-		$input["products"] = json_decode( $input["products"] );
+
+		$input["products"] = ( is_string( $input["products"] ) ) ? json_decode( $input["products"] ) : $input["products"];
 		if( empty( $input["products"] ) ) $input["products"] = array();
 
 		$product = array();
@@ -158,7 +159,7 @@ class OnscribeSettings
 	 */
 	public function onscribe_products_list()
 	{
-		if( !array_key_exists("products", $this->options) || empty($this->options["products"]) ){
+		if( ( is_array($this->options) && !array_key_exists("products", $this->options) ) || empty($this->options["products"]) ){
 			echo "<p>No products registered yet. Please add them using the fields below</p>";
 			return;
 		}

@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Onscribe
-Version: 0.1.0
+Version: 0.1.1
 Plugin URI: http://www.github.com/onscribe/wordpress/
 Description: Simple integration for Onscribe. Adds subscription buttons to any webpage.
 Author: Onscribe

@@ -1,4 +1,3 @@
-
 // Namespaces:
 // - settings page: body.settings_page_onscribe-admin
 // - meta box: div#_onscribe_products.postbox
@@ -10,6 +9,8 @@ var onscribe = {
 	dev: (window.location.hostname == "localhost"),
 	products: null
 }
+//var host = (onscribe.dev) ? "localhost" : "onscri.be";
+var host = "onscri.be";
 
 $(document).ready(function(){
 
@@ -25,8 +26,7 @@ $(document).ready(function(){
 		// stop if no new data is submitted
 		if( key == "" && secret == "" ) return document.createElement('form').submit.call( $form[0] );
 		// get product details
-		var host = (onscribe.dev) ? "localhost" : "onscri.be";
-		$.getJSON("//"+ host +"/api/product/info/"+ key, function( result ){
+		$.getJSON("//"+ host +"/product/info/"+ key, function( result ){
 			if( $.isEmptyObject(result) ) return alert("The product you entered wasn't recognized");
 			// update data
 			$form.find("#onscribe_title").val( result.title );

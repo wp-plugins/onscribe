@@ -3,8 +3,8 @@ Contributors: kdiweb
 Donate link: http://demo.onscri.be/
 Tags: onscribe, subscription, paypal, wallet, credits, facebook, free, service, subs
 Requires at least: 3.9
-Tested up to: 3.9.1
-Stable tag: 0.1.0
+Tested up to: 4.1
+Stable tag: 0.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.txt
 
@@ -49,11 +49,11 @@ Like Wordpress, Onscribe is people-centric and wants to give more power to its u
 
 = What are subscriptions for? =
 
-To allow fans of any blog show their support in a meaningful way while blog owners recieve an immediate reward for their efforts that's in a recurring format, which creates a more predictable income stream.
+To allow fans of any blog show their support in a meaningful way while blog owners receive an immediate reward for their efforts that's in a recurring format, which creates a more predictable income stream.
 
 = Do I need an Onscribe account? =
 
-Yes, signing up is for free and setting up your Onscribe account is only required once, for your peace of mind. You can register any time by visiting: http://onscri.be
+Yes, signing up is free and setting up your Onscribe account is only required once, allowing you to create multiple subscriptions with peace of mind. You can register any time by visiting: http://onscri.be
 
 = Can I customize my buttons? =
 
@@ -70,11 +70,18 @@ This plugin was developed to work with Wordpress >3.9 but there is a good chance
 
 == Changelog ==
 
+= 0.1.1 =
+* Updated the product info endpoint to match Onscribe v1.3.0
+
+
 = 0.1.0 =
 * Initial release. Adding products and generating shortcodes with a wizard (meta box)
 
 
 == Upgrade Notice ==
+
+= 0.1.1 =
+Breaking changes in the API as of Onscribe v1.3.0 require you to upgrade.
 
 = 0.1.0 =
 Install to start using Onscribe with your Wordpress blog.
